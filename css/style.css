@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#accordion {
+  width: 100%;
+}
+
+#accordion button {
+  width: 100%;
+  padding: 20px;
+  background-color: green;
+  color: white;
+}
+
+#accordion .p {
+  display: none;
+}
+
+#accordion .p.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #header .menu {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: -100%;
+    background-color: gray;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+    visibility: hidden;
+  }
+  #header .menu ul li {
+    border-bottom: 1px solid red;
+  }
+  #header .menu.nav-active {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  #header .nav-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=style.css.map */
